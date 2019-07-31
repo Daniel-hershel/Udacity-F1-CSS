@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 1</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+
+  <style>
+  .container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+      /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 250px 600px;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "sd sd sd main main main main main"
+      "ft ft ft ft ft ft ft ft";
+      border: 2px solid yellow;
+
+  }
+  .box{
+  /* width: 250px;
+    height: 150px; */
+    border: 1px solid red;
+    }
+
+  #one{
+      /* row start/column start/ row end/ column end */
+      grid-area: 1/2/3/3;
+      grid-area:
+  }
+
+  #two{}
+  #three{}
+  #four{
+
+  }
+  #five{
+
+  }
+  </style>
+  </head>
+
+  <body>
+  <div class = "container">
+    <div id="one" class="box"> Space 1</div>
+    <div id= "two" class="box"> Space 2</div>
+    <div id = "three" class="box"> Space 3</div>
+    <div id= "four" class="box"> Space 4</div>
+    <div id="five" class="box"> Space 5</div>
+  </div>
+  </body>
+</html>
+
+<!-- display grid -->
+<!-- Row and column -->
+<!-- grid area -->
