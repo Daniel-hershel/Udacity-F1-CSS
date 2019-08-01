@@ -1,0 +1,51 @@
+/* DSB I think maybe reset this to end of concept1 and then live code the changes to make resposnive ? */
+/* Mobile first */
+.container{
+  display:grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 250px 600px;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* Initially each element has its own row for small screens */
+  grid-template-areas: 
+  "hd hd hd hd hd hd hd hd"
+  "sd sd sd sd sd sd sd sd"
+  "main main main main main main"
+  "ft ft ft ft ft ft ft ft";
+  border: 2px solid yellow;
+}
+.box{
+  /* width: 250px;
+    height: 150px; */
+    border: 1px solid red;
+    background: #F8FA9D;
+    }
+
+  .header{
+    /* row start/column start/ row end/ column end */
+    grid-area:hd;
+  }
+
+  .footer{
+    grid-area: ft;  
+  }
+  .sidebar{
+    grid-area: sd;
+  }
+  .content{
+    grid-area: main;
+  }
+
+/* If Screen Is Wide Enough */
+@media(min-width:900px){
+.container{
+      display:grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 250px 600px;
+      /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "sd sd main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+      border: 2px solid red;
+  }
+}
