@@ -1,0 +1,17 @@
+/* Missing `}` closing bracket */
+#reaction{
+
+
+#interaction{
+
+}
+/* Missing selector : `#` or `.` */
+reaction{
+
+}
+
+/* Typo in property or value  */
+#reaction{
+widthe:40px;
+height: 4opx;
+}
