@@ -12,6 +12,9 @@
   .container{
       display:flex;
       flex-direction: column;
+      /* flex-direction: row; */
+      align-items: center;
+      justify-content: baseline;
       border: 2px solid yellow;
   }
   .box{
@@ -19,14 +22,26 @@
         height: 150px;
         border: 1px solid red;
     }
+
+    #one{
+      order:1;
+      /* flex: 2 1 300px; */
+    }
+    #two{
+      order:1;
+      /* flex: 1 2 300px; */
+    }
+    #three{
+      order:1;
+    }
   </style>
   </head>
 
   <body>
-  <div class = "container">
-    <div class="box"> Box 1</div>
-    <div class="box"> Box 2</div>
-    <div class="box"> Box 3</div>
+  <div class = "container" >
+    <div class="box" id="one"> Box 1</div>
+    <div class="box" id="two"> Box 2</div>
+    <div class="box" id="three"> Box 3</div>
   </div>
   </body>
 </html>
