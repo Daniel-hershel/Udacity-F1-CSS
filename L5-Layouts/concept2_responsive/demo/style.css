@@ -41,7 +41,6 @@
       display:grid;
       grid-template-columns: 300px 300px 300px;
       grid-template-rows: 250px 600px;
-      /* grid-template-columns: repeat(3, 1fr); */
       grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
       "sd sd main main main main main main"
@@ -49,3 +48,20 @@
       border: 2px solid red;
   }
 }
+
+
+
+/* Part Deux + */
+
+/* Medium Screens*/
+/* @media (min-width: 600px) and (max-width:900px){
+  .container{
+  }
+  } */
+  
+  /* Large Screens*/
+  /* @media (min-width:901px){
+  .container{
+  }
+  }
+   */
