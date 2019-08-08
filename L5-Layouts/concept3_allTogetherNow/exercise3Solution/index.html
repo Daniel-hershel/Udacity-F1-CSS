@@ -23,6 +23,16 @@
 }
 
 /* add css for nested grid here */
+
+.nestedGrid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.nestedGrid > *{
+  border: 2px solid aquamarine;
+}
 .box{
     border: 1px solid red;
     background: #F8FA9D;
@@ -67,7 +77,12 @@
     <div class="sidebar box"><h1>Blog Posts</h1><a href="post.html">Most Recent Post</a></div>
     <div class="content box">
 <!-- nest grid here -->
-
+      <div class="nestedGrid">
+        <div><h1>Thursday</h1></div>
+        <div><h1>Fall</h1></div>
+        <div><h1>Fritz</h1></div>
+        <div><h1>Dairy Free</h1></div>
+      </div>
     </div>
     <div class="footer box">Footer</div>
   </div>
