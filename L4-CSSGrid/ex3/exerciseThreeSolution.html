@@ -13,7 +13,6 @@
     /* Step 1: Set display to grid */
       display:grid;
    /* Step 2: setup rows amd columns */
-      /* grid-template-columns: repeat(3, 1fr); */
       grid-template-columns: 300px 300px 300px;
       grid-template-rows: 250px 600px;
       grid-template-areas: 
@@ -24,19 +23,21 @@
 
   }
   .box{
-    /* border: 1px solid red; */
     background: #F8FA9D;
     }
 
-/* Assign grid area below */
   .header{
+    grid-area:hd;
   }
 
   .footer{
+    grid-area:ft;
   }
   .sidebar{
+    grid-area:sd;
   }
   .content{
+    grid-area:main;
   }
   </style>
   </head>
