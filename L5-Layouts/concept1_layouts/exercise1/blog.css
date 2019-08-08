@@ -2,34 +2,26 @@
     /* Step 1: Set display to grid */
       display:grid;
    /* Step 2: setup rows amd columns */
-      /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 250px 600px;
-      grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "feat feat feat feat feat feat feat feat"
-      "main main main main main main main main"
-      "ft ft ft ft ft ft ft ft";
+   /* Step : setup named grid areas */
+  
       border: 2px solid yellow;
 
   }
   .box{
-  /* width: 250px;
-    height: 150px; */
     border: 1px solid red;
     background: #F8FA9D;
     }
 
   .header{
-      grid-area:hd;
+      /* Set elements grid-area here */
   }
 
   .footer{
-    grid-area: ft;  
+    /* Set elements grid-area here */
   }
   .feature{
-    grid-area: feat;
+    /* Set elements grid-area here */
   }
   .content{
-    grid-area: main;
+    /* Set elements grid-area here */
   }
